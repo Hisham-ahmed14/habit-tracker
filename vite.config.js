@@ -7,28 +7,27 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
         name: 'Discipline Tracker',
         short_name: 'Tracker',
-        description: 'Personal self-improvement, fitness, and daily habits tracker.',
-        theme_color: '#121212',
-        background_color: '#121212',
+        description: 'Personal self-improvement, fitness, and daily habits tracker',
+        start_url: '/',
         display: 'standalone',
+        background_color: '#121212',
+        theme_color: '#121212',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: '/icon-192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/icon-512.png',
             sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable'
+            type: 'image/png'
           }
         ]
       }
     })
-  ],
+  ]
 })
