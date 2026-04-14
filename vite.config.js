@@ -13,8 +13,6 @@ export default defineConfig({
         description: 'Personal self-improvement, fitness, and daily habits tracker',
         start_url: '/',
         display: 'standalone',
-        background_color: '#121212',
-        theme_color: '#121212',
         icons: [
           {
             src: '/icon-192.png',
